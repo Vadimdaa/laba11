@@ -25,6 +25,14 @@
 $(function (){
     $('li').append('<hr>');
 });
+$(function (){
+    $('h1').wrap("<div class='new'></div>");
+});
+$(document).ready(function() {
+  $(".btn").bind( "click", function() {
+    alert("Вы вошли в систему")
+  });
+});
 
 </script>
 <body>
@@ -50,7 +58,7 @@ $(function (){
 			<label for="pass">Пароль</label>   
     <p><input type="password" name="pass" id="pass"></p>
 				
-	<p><input type="submit" value="Вход"></p>
+	<p><input type="submit" value="Вход" class="btn"></p>
 
    </fieldset>
 </form>
