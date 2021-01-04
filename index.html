@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная 2</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+        p {font-size: 20px;
+          }
+    </style>
+</head>
+<script>
+   $(document).ready(function(){
+       $("h5").click(function(){
+           $(this).hide();
+       });
+   });
+   $(function (){
+    $('p').after('<hr>');
+});
+   $(function (){
+    $('p').before('<hr>');
+});
+$(function (){
+    $('li').append('<hr>');
+});
+
+</script>
+<body>
+<h2>Вариант 1</h2>
+<p><a href="https://www.google.ru/">Ссылка без подчёркивания</a></p>
+<h1>Цветной фон заголовка</h1>
+Выделение <a id="videlenie">текста</a>
+<hr class="h">
+<div class="bolsh">большие буквы из маленьких</div>
+<ul>
+   <li>Нет отступа</li>
+   <li>У пунктов списка</li>
+   <li>Слева</li>
+</ul>
+<h3>Нет отступа от края</h3>
+<p style="font-size: 70px;">Шрифт 70, так как встроенный стиль приоритнее внедрённого</p>
+<p class="prior" style="font-size: 70px;">Шрифт 70, так как встроенный стиль приоритнее связанного</p>
+<form>
+   <fieldset>
+    Вход на сайт <br><br>
+			<label for="login">Логин</label>
+	<p><input name="login" id="login" ></p>
+			<label for="pass">Пароль</label>   
+    <p><input type="password" name="pass" id="pass"></p>
+				
+	<p><input type="submit" value="Вход"></p>
+
+   </fieldset>
+</form>
+<h4>css таблица с выравниванием полей</h4>
+<form method="post" action="tablefree.html">
+<div>
+<label for="email">Email:</label>
+<input id="email" type="text" name="email" class="v" />
+</div>
+<div>
+<label for="password">Пароль:</label>
+<input id="password" type="password" name="password" class="v" />
+</div>
+<div>
+<input type="submit" name="btnSubmit" value="Вход" class="btn"  />
+</div>
+</form>
+
+<div style="padding: 15px; margin: 50px">Внутренние и внешние отступы</div>
+<p><img src="od.jpg" class="img" alt="Одуванчик">
+     Lorem   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+<strong class="str">Строковый элемент</strong>
+<strong class="str">Строковый элемент</strong>
+<ul>
+   <li class="blo">Блочный элемент</li>
+   <li class="blo">Ещё блочный элемент</li>
+</ul>
+<nav>
+<ul>
+<li><a  href="#">Главная</a></li>  
+<li><a  href="#">Доставка</a></li> 
+<li><a  href="#">Услуги</a></li>   
+<li><a  href="#">Отзывы</a></li>
+</ul>
+</nav>
+<a class="ssilka" href="https://www.google.ru/">Ссылка разного цвета при наведении</a>
+<div class="image">
+	<img src="od.jpg" alt="Текст поверх фото">
+	<h5>Текст поверх фото (нажмите, чтобы убрать)</h5>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+a {
+text-decoration: none;	
+}
+h1 {
+background: lime;
+padding: 10px;	
+}
+#videlenie {
+color: #A5260A;	
+text-decoration: underline;
+}
+.h{
+border: none;
+width: 1800px;
+background-color: red;
+height: 7px;	
+}
+.bolsh{
+text-transform: uppercase;	
+}
+ul{
+padding: 10px;	
+margin: 0;
+
+}
+h3{
+margin: -8px;	
+margin-top: 7px;
+}
+.prior{
+font-size: 150px;
+}
+fieldset{
+width: 700px;
+}
+.btn{
+background-color: transparent;
+border: 0;
+padding: 0;
+}
+.img{
+float: left;
+margin: 7px 7px 7px 0;
+width: 170px;
+}
+.blo{
+display: inline;
+}
+.str{
+display: block;
+}
+.v{
+
+}
+
+.ssilka:hover{
+color: #FFFF40;
+background: #e24486;
+}
+img{
+border: 4px solid #FF2800;
+}
+.image{
+position: relative;
+}
+a:hover {
+color: lime;
+}
+h5{
+position: absolute;
+top: 200px;
+color: lime;
+}
+body {
+background-image: url(pngtree.jpg);
+background-repeat: repeat-x;
+
+}
+form div {
+clear: left;
+padding-top: 4px;
+}
+form div label {
+float: left;
+width: 70px;
+}
