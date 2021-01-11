@@ -5,12 +5,17 @@
     <title>Лабораторная 2</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<style>
         p {font-size: 20px;
           }
     </style>
 </head>
 <script>
+    
    $(document).ready(function(){
        $("h5").click(function(){
            $(this).hide();
@@ -55,6 +60,14 @@ $('p').dblclick(
 $(function (){
     $('.blo').remove();
 });
+
+$(document).ready(function() {
+   $("#login").autocomplete({source:["vadim","vodim","deleted","no","yes","login","vhod","maybe"]});
+});
+
+$( function() {
+    $(".plag").draggable();
+  } );
 </script>
 <body>
 <h2>Вариант 1</h2>
@@ -71,7 +84,12 @@ $(function (){
    <li>Слева</li>
 </ul>
 <h3>Нет отступа от края</h3>
+<div id="draggable" class="ui-widget-content">
+    <p>Drag me around</p>
+  </div>
+<div class="plag">
 <p style="font-size: 70px;">Шрифт 70, так как встроенный стиль приоритнее внедрённого</p>
+</div>
 <p class="prior" style="font-size: 70px;">Шрифт 70, так как встроенный стиль приоритнее связанного</p>
 <form>
    <fieldset>
